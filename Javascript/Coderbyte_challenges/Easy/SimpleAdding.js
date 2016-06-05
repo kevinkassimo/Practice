@@ -1,3 +1,4 @@
+//TODO: MY_SOL
 function SimpleAdding(num) { 
 
     var result = 0;
@@ -11,3 +12,11 @@ function SimpleAdding(num) {
    
 // keep this function call here 
 SimpleAdding(readline());
+
+//TODO: BEST_SOL
+function SimpleAdding(num) { 
+  if(num === 1){
+   return 1; /* return 1 to get out of our function recursion below */
+  }
+  return num + SimpleAdding(num - 1); /* call our function - 1 until 1  */
+}
