@@ -22,10 +22,10 @@ function SimpleSymbols(str) {
 }
 
 function isalpha(chr) {
-	if (chr.length != 1) {
+	if (chr.length !== 1) {
 		return false;
 	}
-	if (chr.match(/[A-Za-z]/)) {
+	if (chr.match(/[A-Za-z]/)) { //This is Okay because match will return null if not found, instead of an empty object.
 		return true;
 	} else {
 		return false;
